@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/wavy.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/wavy.js"></script>
+  <script>
+    $(document).ready(function () {
+      wavy(['jumpy', 'wavy']);
+    });
+  </script>
+
+  <title>Wavy SandBox</title>
+</head>
+
+<body>
+  <div class="reflectionBelow wavy">wave up by default...</div>
+  <div class="reflectionRight Red jumpy" data-wavyDir="down">Jumpy down...</div>
+  <div class="reflectionLeft Blue jumpy" data-wavyDir="up">Jumpy up...</div>
+  <div class="Yellow wavy" data-wavyDir="up">This Jumpy Text just jump up...</div>
+</body>
+
+</html>

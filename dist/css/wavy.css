@@ -1,0 +1,29 @@
+@keyframes wavyup {
+  0% {
+    transform: translateY(0px); }
+  20% {
+    transform: translateY(-20px); }
+  40%, 100% {
+    transform: translateY(0px); } }
+
+@keyframes wavydown {
+  0% {
+    transform: translateY(0px); }
+  20% {
+    transform: translateY(20px); }
+  40%, 100% {
+    transform: translateY(0px); } }
+
+.__wavyup span {
+  position: relative !important;
+  display: inline-block !important;
+  animation: wavyup ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  animation-duration: 1.5s; }
+
+.__wavydown span {
+  position: relative !important;
+  display: inline-block !important;
+  animation: wavydown ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  animation-duration: 1.5s; }

@@ -1,0 +1,17 @@
+{
+  "name": "wavy",
+  "version": "1.0.0",
+  "description": "wavy package created to make text wavy animation more simple and intuative",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "wavy"
+  ],
+  "author": "Ohad Shalev",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
